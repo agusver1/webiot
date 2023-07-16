@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilosIOT.css">
+    <title>Contacto</title>
+</head>
+<body class="flexColumna">
+    <header> 
+        <a href="./index.html" class="logo"><img src="./img/axis.png" alt="Axis Solutions logo"></a>
+        <nav class="navegacionMenu">
+            <ul class="menuBotonesHeader">
+                <li><a href="./index.html" class="botonHeader">Home</a></li>
+                <li class="dropdown">
+                        <a href="#" class="botonHeader">Productos</a>
+                        <ul class="subMenu">
+                            <li>
+                                <a href="./funcionalidad.html" class="flexColumna menuClick">
+                                    <p class="tituloSub">Funcionalidad</p>
+                                    <p class="descripcionSub">Equípate con dispositivos inteligentes</p>
+                                    <img src="./img/camara1.png" alt="Camara de seguridad" class="imagenSub">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./conexiones.html" class="flexColumna menuClick">
+                                    <p class="tituloSub">Conexiones</p>
+                                    <p class="descripcionSub">Haz tu casa inteligente</p>
+                                    <img src="./img/conexion1.png" alt="Parlante de conexion" class="imagenSub">
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="#" class="botonHeader">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+       <div class="flexColumna formularioFill">
+            <h2 class="tituloForm">Formulario de contacto</h2>
+            <form>
+                <div class="cajaForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required class="llenadoDatos">
+                </div>
+                <div class="cajaForm">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required class="llenadoDatos">
+                </div>
+                <div class="cajaForm">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required class="llenadoDatos">
+                </div>
+                <div class="cajaForm">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto" required class="llenadoDatos">
+                </div>
+                <div class="cajaForm">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" required class="llenadoDatos"></textarea>
+                </div>
+                <div class="cajaForm enviar">
+                    <input type="submit" value="Enviar" class="botonEnviar">
+                </div>
+            </form>
+        </div> 
+    </section>
+</body>
+</html>

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.flexColumna {
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  flex-basis: 10%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 30%;
+}
+
+.navegacionMenu {
+  width: 70%;
+  position: relative;
+}
+
+.menuBotonesHeader { /* por default se setean como una fila*/
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botonHeader {
+  margin: 0px 50px 0px 50px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.botonHeader:hover {
+  background-color: #9f9f9f;
+  color: #fff;
+  transition: 0.7s;
+  box-shadow: 0 4px 8px rgba(172, 172, 172, 0.1);
+  border-radius: 3px;
+}
+
+.dropdown {
+  display: flex;
+}
+
+.dropdown:hover .subMenu {
+  display: flex;
+}
+
+.subMenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+  width: 99%;
+  margin-top: 1rem;
+  padding: 0;
+  border: 1px solid black;
+  pointer-events: all;
+}
+
+.subMenu li {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.subMenu li:hover {
+  background-color: #9f9f9f;
+  color: #fff;
+  transition: 0.7s;
+  box-shadow: 0 4px 8px rgba(172, 172, 172, 0.1);
+  border-radius: 3px;
+}
+
+.menuClick{
+  text-decoration: none;
+}
+
+.tituloSub {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+.descripcionSub {
+  font-size: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+.imagenSub {
+  width: 30%;
+  height: auto;
+  align-self: flex-end;
+}
+/*Aca empieza el main*/
+main {
+  display: flex;
+  flex: 1;
+}
+
+.columnaAnuncio, .columnaImagen {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+  background-color: #d3f3fe;
+}
+
+.columnaImagen {
+  flex-basis:70%;
+}
+
+.columnaAnuncio {
+  flex-basis:30%;
+}
+
+.columnaImagen img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.contenidoAnuncio {
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.textoAnuncio {
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.textoAnuncio h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.textoAnuncio h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.btn {
+  display: inline-flex;
+  background-color: rgb(125, 252, 239);
+  border: 4px solid black;
+  font-family: 'Lato', sans-serif; /* Los form no heredan el atributo de font-family*/
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1.7rem;
+  align-items: center;
+  overflow: hidden;
+  color: black;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9f9f9f;
+  transition: 0.7s;
+  box-shadow: 0 4px 8px rgba(172, 172, 172, 0.1);
+  border-radius: 3px;
+}
+
+/*Aca empieza el catalogo de productos*/
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.caja img {
+  width: 220px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.caja {
+  flex-grow: 1;
+  width: 25%;
+  align-items: center;
+  margin: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.textoPrincipal {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.descripcionProd {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.formularioFill {
+  justify-content: center;
+  border-top: 2px solid #c5c5c5;
+  border-radius: 10px;
+  box-shadow: 10px 0 0px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.tituloForm {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.cajaForm {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15%;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.cajaForm label {
+  flex-basis: 20%;
+  font-size: 1.5rem;
+}
+
+.cajaForm input {
+  flex-basis: 20%;
+  font-size: 1.5rem;
+}
+
+.enviar {
+  margin: 25px 0px 0px 0px;
+  font-size: 1.5rem;
+}
+
+.llenadoDatos {
+  flex:1;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+.botonEnviar {
+  width:150px;
+  border-radius: 5px;
+  border: 2px solid rgb(72, 72, 72);
+  font-family: 'Lato', sans-serif;
+  background-color: #d7d7d7;
+}
+
+.botonEnviar:hover {
+  transition: 300ms;
+  background-color: #c3c3c3;
+}
+
+.cont-carrousel{
+  width:100%;
+  overflow:hidden;
+  display: flex;
+}
+
+.carrousel{
+  display: flex;
+  animation: carrouselAnim 35s infinite alternate;
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes carrouselAnim {
+  0% { transform: translateX(0%); }
+  5% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  30% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  55% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  80% { transform: translateX(-300%); }
+  100% { transform: translateX(-300%); }
+}
+
+
+@media (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    flex-basis: 10%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .logo {
+    height: 100%;
+    width: auto;
+  }
+  .menuBotonesHeader { /* por default se setean como una fila*/
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+  }
+  
+  .botonHeader {
+    padding: 10px 0px;
+  }
+  main {
+    flex-direction: column;
+  }
+  .columnaAnuncio {
+    flex-basis: 55%;
+    justify-content: center;
+  }
+  .contenidoAnuncio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .textoAnuncio {
+    text-align: center;
+  }
+
+  .subMenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    left: -15%;
+    top: 50%;
+    width: 130%;
+    margin-top: 1rem;
+    padding: 0;
+    border: 1px solid black;
+    pointer-events: all;
+  }
+  .imagenSub {
+    width: 50%;
+    align-self: center;
+    padding-top: 30px;
+  }
+  .caja img {
+    width: 150px;
+    height: 140px;
+    border-radius: 30px;
+  }
+
+  .cajaForm {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cajaForm label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cajaForm input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
